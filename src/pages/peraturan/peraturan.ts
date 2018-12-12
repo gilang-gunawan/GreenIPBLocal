@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, App } from 'ionic-angular';
+import { NavController, NavParams, AlertController, App } from 'ionic-angular';
 import { TungguPage } from '../tunggu/tunggu';
 import { Data } from '../../provider/data';
 
@@ -10,8 +10,9 @@ import { Data } from '../../provider/data';
 export class PeraturanPage {
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
+    public alertCtrl: AlertController,
     public app: App
     ) {
   }
@@ -23,6 +24,13 @@ export class PeraturanPage {
   pinjam(){
     if(this.cucumber==true){
     this.app.getRootNav().push(TungguPage);
+    }
+    else{
+      const alert = this.alertCtrl.create({
+        title: 'Harap centang checkbox ketersediaan',
+        buttons: ['OK']
+      });
+      alert.present();
     }
   }
 
