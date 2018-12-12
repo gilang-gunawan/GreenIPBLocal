@@ -1,0 +1,65 @@
+<ion-header>
+
+    <ion-navbar color="secondary" text-center>
+      <ion-title text-left>
+          <ion-icon name="bicycle"></ion-icon>
+        Sign Up
+      </ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <ion-list>
+    
+        <ion-item>
+          <ion-label floating>Nama Lengkap</ion-label>
+          <ion-input type="text" [(ngModel)]="nama"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>NIM</ion-label>
+            <ion-input type="text" [(ngModel)]="nim"></ion-input>
+          </ion-item>
+
+        <ion-item>
+            <ion-label floating>No Telepon</ion-label>
+            <ion-input type="number" [(ngModel)]="notelp"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="text" [(ngModel)]="email"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label floating>Kata Sandi</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>Konfirmasi Kata Sandi</ion-label>
+          <ion-input type="password" [(ngModel)]="passwordTest"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Alamat</ion-label>
+            <ion-input type="text" [(ngModel)]="alamat"></ion-input>
+          </ion-item>
+  
+          <ion-item>
+              <ion-label floating>Departemen</ion-label>
+              <ion-input type="text" [(ngModel)]="departemen"></ion-input>
+            </ion-item>
+  
+          <ion-item>
+              <ion-label floating>Fakultas</ion-label>
+              <ion-input type="text" [(ngModel)]="fakultas"></ion-input>
+          </ion-item>
+    
+      </ion-list>
+    
+      <button ion-button block  color="secondary" (click)="signUp()">Daftar</button>
+      
+    </ion-content>

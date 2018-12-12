@@ -1,0 +1,27 @@
+page-welcome {
+    .background {
+        background-image: url('../assets/pict/background.png');
+        // background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 82%;
+    }
+
+    .footer {
+        max-height: 20vh;
+        margin-top: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        border-top-left-radius: 2%; 
+        border-top-right-radius: 2%;
+    }
+}
